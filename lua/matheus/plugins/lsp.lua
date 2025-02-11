@@ -3,6 +3,19 @@ return {
 	config = function()
 		local lspconfig = require('lspconfig')
 		local capabilities = require('blink.cmp').get_lsp_capabilities()
+
+		lspconfig.ts_ls.setup {
+			capabilities = capabilities
+		}
+		lspconfig.jedi_language_server.setup {
+			capabilities = capabilities
+		}
+		lspconfig.html.setup {
+			capabilities = capabilities
+		}
+		lspconfig.cssls.setup {
+			capabilities = capabilities
+		}
 		lspconfig.clangd.setup {
 			capabilities = capabilities
 		}
