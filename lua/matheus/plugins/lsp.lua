@@ -10,12 +10,6 @@ return {
 		lspconfig.jedi_language_server.setup {
 			capabilities = capabilities
 		}
-		lspconfig.html.setup {
-			capabilities = capabilities
-		}
-		lspconfig.cssls.setup {
-			capabilities = capabilities
-		}
 		lspconfig.clangd.setup {
 			capabilities = capabilities
 		}
