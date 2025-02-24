@@ -13,6 +13,12 @@ return {
 		lspconfig.clangd.setup {
 			capabilities = capabilities
 		}
+		lspconfig.html.setup {
+			capabilities = capabilities,
+		}
+		lspconfig.css_ls.setup {
+			capabilities = capabilities,
+		}
 		lspconfig.lua_ls.setup {
 			on_init = function(client)
 				if client.workspace_folders then
