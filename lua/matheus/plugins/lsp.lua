@@ -7,6 +7,9 @@ return {
 		lspconfig.ts_ls.setup {
 			capabilities = capabilities
 		}
+		lspconfig.ruff.setup {
+			capabilities = capabilities,
+		}
 		lspconfig.jedi_language_server.setup {
 			capabilities = capabilities
 		}
