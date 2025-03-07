@@ -19,7 +19,10 @@ return {
 		lspconfig.html.setup {
 			capabilities = capabilities,
 		}
-		lspconfig.css_ls.setup {
+		lspconfig.cssls.setup {
+			capabilities = capabilities,
+		}
+		lspconfig.djlsp.setup {
 			capabilities = capabilities,
 		}
 		lspconfig.lua_ls.setup {
