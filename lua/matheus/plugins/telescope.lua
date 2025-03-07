@@ -12,8 +12,9 @@ return {
 				}
 			})
 			require('telescope').load_extension('fzf')
-			vim.keymap.set('n', '<leader>fh', require('telescope.builtin').help_tags)
-			vim.keymap.set('n', '<leader>fd', require('telescope.builtin').find_files)
+			vim.keymap.set('n', '<leader>fh', require('telescope.builtin').help_tags, { desc = "telescope help tags." })
+			vim.keymap.set('n', '<leader>fd', require('telescope.builtin').find_files, { desc = "telescope find files." })
+			vim.keymap.set('n', '<leader>fb', require('telescope.builtin').buffers, { desc = "telescope search open buffers." })
 			vim.keymap.set('n', '<leader>en', function()
 				require('telescope.builtin').find_files {
 					cwd = vim.fn.stdpath("config")
